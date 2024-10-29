@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebRTC</title>
+  <link rel="stylesheet" href="main.css">
+  <script>
+    const ROOM_ID =' <%= roomID %>'
+  </script>
+<script defer src="https://unpkg.com/peerjs@1.5.4/dist/peerjs.min.js"></script>
+<script defer src="/socket.io/socket.io.js"></script>
+<script defer src="script.js"></script>
+
+</head>
+<body>
+  <div id="video-grid">
+    <!-- <video class="video-player" id="user-1" autoplay playsinline></video>
+    <video class="video-player" id="user-2" autoplay playsinline></video> -->
+  </div>
+  <button id="mute-button">Mute</button>
+  <button id="create-offer">Create Offer</button>
+  <label >SDP Offer</label>
+  <textarea name="" id="offer-sdp"></textarea>
+
+  <button id="create-answer">Create Answer</button>
+  <label >SDP Answer</label>
+  <textarea name="" id="answer-sdp"></textarea>
+
+  <button id="add-answer">Add Answer</button>
+
+</body>
+<!-- <script src="main.js"></script> -->
+</html>
